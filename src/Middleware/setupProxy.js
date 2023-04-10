@@ -4,7 +4,7 @@ module.exports = function (app) {
     app.use(
         "/",
         createProxyMiddleware({
-            target: "",
+            target: "https://hamza-s-shop-production.up.railway.app/",
             changeOrigin: true,
         })
     );
