@@ -4,7 +4,7 @@ import { GlobalState } from "../../../GlobalState";
 function LoadMore() {
     const state = useContext(GlobalState);
     const [page, setPage] = state.productsAPI.page;
-    const [result, setResult] = state.productsAPI.result;
+    const [result] = state.productsAPI.result;
 
     return <div className="load_more">
     {
