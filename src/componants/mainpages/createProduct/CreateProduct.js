@@ -69,6 +69,9 @@ function CreateProduct() {
             });
             setLoading(false);
             setImages(res.data);
+            if(res){
+                console.log("")
+            }
         } catch (error) {
             alert(error.response.data.msg);
         }
@@ -86,6 +89,9 @@ function CreateProduct() {
             );
             setLoading(false);
             setImages(false);
+            if(res){
+                console.log("")
+            }
         } catch (error) {
             alert(error.response.data.msg);
         }
