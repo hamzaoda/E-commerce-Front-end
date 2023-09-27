@@ -5,7 +5,7 @@ module.exports = function (app) {
     app.use(
         "/api",
         createProxyMiddleware({
-            target: "https://hamza-s-shop-production.up.railway.app/",
+            target: "https://hamza-s-shop.vercel.app/",
             changeOrigin: true,
         })
     ),
